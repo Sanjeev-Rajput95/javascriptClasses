@@ -3,12 +3,17 @@ class Bubble {
 
         console.log("hello",x,y)
     }
-    fun () {
+
+    // its a static function of  buuble class and we can call this function 
+    // without making object(instance) of this class 
+
+   static fun () {                         
         console.log("this is function")
     }
 
 } 
-let a = new Bubble ()
-let b = new Bubble ("y","x")
-a.fun()
-b.fun()
+Bubble.fun()
+// let a = new Bubble ()
+// let b = new Bubble ("y","x")
+// a.fun()
+// b.fun()
